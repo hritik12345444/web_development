@@ -1,0 +1,17 @@
+*{
+    background-color: lightblue;
+    margin: 0%;
+
+}
+h1{
+    background-color: green;
+    text-align: center;
+    font-style: inherit;
+    width: 50%;
+}
+img{
+    width: 10%;
+}
+div{
+    background-color: rgb(236, 230, 230);
+}

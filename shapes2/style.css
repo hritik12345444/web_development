@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shape{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#one{
+    
+    border: 1px solid black;
+}
+#one:hover{
+    background-color: rgb(132, 24, 5);
+}
+#two{
+    border: 1px solid black;
+    height: 170px;
+    width: 170px;
+    rotate: 45deg;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+#two:hover{
+    background-color: blue;
+    
+}
+#three{
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#three:hover{
+    background-color: rgb(2, 32, 2);
+}
+#two h1{
+    height: 100%;
+    rotate: -45deg;
+    margin-bottom: 50px;
+    margin-left: 91px;
+}
+h1{
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    margin-top: 140px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+h1:hover{
+    color: black;
+}

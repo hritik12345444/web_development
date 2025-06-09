@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    height: 140px;
+    width: 140px;
+    border: 2px solid rgb(81, 21, 21);
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    border-radius: 10px;
+}

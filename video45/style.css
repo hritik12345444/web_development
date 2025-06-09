@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    height: 90vh;
+    width: 90vw;
+    background-color: rgb(96, 155, 206);
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 15vw;
+    background-color: rgb(185, 175, 58);
+    /* transition-property: all ;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s; */
+
+    /* we can write these all four property in 1 line which is known as short-hand */
+    transition: all 5s ease-in-out 1s;
+}
+.special{
+    /* we can write these two property in .box but we write here for clear visualisation; */
+    transform: translateX(10vw) translateY(10vh);
+    background-color: green;
+}

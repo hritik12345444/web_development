@@ -1,0 +1,282 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    height: 13%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo img{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text{
+
+    color: rgb(4, 4, 70);
+    display: flex;
+    margin-right: 20px;
+    margin-left: -10px;
+}
+
+.text:hover{
+    color: rgb(32, 107, 173);
+}
+
+#contectdetails{
+    font-weight: 200;
+    /* margin-left: 300px; */
+    color: rgb(4, 4, 70);
+}
+
+#icon text{
+    display: flex;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    /* margin-left: 30px; */
+    border-radius: 50%;
+    padding: 8px;
+    color: rgb(4, 4, 70);
+}
+.icon:hover{
+    
+    background-color: rgb(228, 240, 240);
+}
+
+#fakeheader{
+    height: 13%;
+    width: 100%;
+    /* background-color: rgb(238, 219, 9) */
+
+}
+#login{
+    display: flex;
+    font-weight: 50%;
+    /* margin-left: 35px; */
+    border-radius: 25%;
+    padding: 6px 10px;
+    color: rgb(4, 4, 70);
+}
+#login:hover{ 
+    background-color: rgb(228, 240, 240);
+}
+
+#try{
+    background-color: rgb(11, 129, 11);
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+#try:hover{
+    background-color: rgb(4, 41, 4);
+}
+#contectdetails p:hover{
+    color: rgb(32, 107, 173);
+}
+#pg1{
+    height: 87%;
+    width: 100%;
+}
+
+/* PAGE ONE WORK */
+#strip{
+    height: 8%;
+    width: 100%;
+    background-color: rgb(7, 7, 110);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+#strip p{
+    margin-left: 15px;
+    font-weight: 400;
+}
+#strip h3{
+    margin-left: 15px;
+    
+}
+#content{
+    height: 76%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#box1{
+    height: 100%;
+    width: 49%;
+    /* background-color: rgb(31, 24, 160); */
+}
+#box1 h1{
+    margin: 30px 80px;
+    font-size :60px;
+    color: rgb(10, 10, 88);
+}
+#box1 p{
+    margin: 30px 80px;
+    font-size: 25px;
+    font-weight: 100;
+}
+#box2{
+    height: 100%;
+    width: 49%;
+    /* background-color: rgb(86, 36, 36); */
+    background-image: url(neon-guy-mask-smiling-4k-oa-240x320.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#uperimage{
+    height: 70%;
+    width: 70%;
+    border: 1px black solid;
+    background-image: url(images\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#uperimage img{
+    height: 100%;
+    width: 100%;
+}
+
+#contactus p{
+    border-radius: 10%;
+}
+/* #box2 img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+} */
+/* #pic{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: 0cm;
+} */
+#footer{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 16%;
+    width: 100%;
+    color: rgb(14, 14, 141);
+
+}
+
+#footer h1{
+    font-size: 50px;
+}
+
+#btns{
+    display: flex;
+    margin: 80px 80px ;
+}
+
+#btns1{
+    width: 20%;
+    background-color: rgb(28, 70, 208);
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    display: flex;
+    color: white;
+    margin-right: 5px;
+    padding: 10px;
+    margin-left: 50px;
+}
+#btns1:hover{
+    background-color: rgb(2, 2, 53);
+}
+#btns2{
+    border-radius: 4px;
+    margin-left: 5px;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    color: blue;
+    border: 1px solid blue;
+    font-weight: bold;
+    margin-left: 30px;
+}
+#btns2:hover{
+    border-color: rgb(5, 2, 43);
+    background-color: rgb(220, 220, 234);
+    color: rgb(13, 13, 116);
+}
+#pg2{
+    height: 87%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 60%;
+    width: 20%;
+    border: black solid 1px;
+    margin-left: 25px;
+}
+#card1{
+    background-color: white;
+}
+#card1 h{
+    margin-top: 100px;
+    font-weight: 5px;
+}
+#card2{
+    background-color: red;
+}
+
+#card3{
+    background-color: blue;
+}
+
+#card4{
+    background-color: black;
+}

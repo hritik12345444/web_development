@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+div{
+    font-size: large;
+    line-gap-override: 742px;
+    /* border: 0.001px solid lightgreen; */
+    margin-top: 2px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
