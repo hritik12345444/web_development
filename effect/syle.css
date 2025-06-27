@@ -3,7 +3,7 @@
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    border: 25px solid rgb(214, 57, 57);
+    border: 25px solid rgb(255, 69, 0);
     border-top: 20px solid rgb(66, 30, 209);
     animation: ani 2.5s linear infinite;
 }
