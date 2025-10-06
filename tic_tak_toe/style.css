@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+h1{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bolder;
+    color:  rgb(255, 255, 255);
+    cursor: wait;  /*optional */
+    /* 3-D color apply */
+    text-shadow: 0 0 5px #0ff,
+    0 0 10px rgb(15, 236, 26),
+    0 0 20px rgb(6, 217, 6), 
+    0 0 40px rgb(57, 231, 22),
+    0 0 50px rgba(28, 158, 43, 0.733);
+}
+
+#msg{
+    font-size: 40px;
+    font-weight: bolder;
+    color:  rgb(255, 255, 255);
+    text-shadow: 0 0 5px #0ff,
+    0 0 10px rgb(15, 236, 26),
+    0 0 20px rgb(6, 217, 6), 
+    0 0 40px rgb(57, 231, 22),
+    0 0 50px rgba(28, 158, 43, 0.733);
+    cursor: context-menu;
+}
+
+.msg-container{
+    text-align: center;
+    align-items: center;
+    height: 140px;
+}
+
+.hide{
+    display: none;
+}
+
+#new-gamebtn{
+    margin-top: 25px;
+   height: 40px;
+    width: 150px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px 3px 1px yellowgreen;
+    cursor: pointer; 
+}
+
+
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #368052; /*1a1a1a*/ 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: auto;
+}
+
+#game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container{
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    /* background-color: red; */
+    margin-bottom: 100px;
+}
+
+.box{
+    height: 110px;
+    width: 110px;
+    margin-top: 5px;
+    margin-left: px;
+    border-radius: 7px;
+    box-shadow: -2px 2px 4px yellowgreen;
+    font-size: 40px;
+    cursor: pointer;
+    vertical-align: top;
+    font-weight: bolder;
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+
+#res-btn{
+    margin-top: 70px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    /* text-shadow: #368052; */
+    box-shadow: -4px 3px 1px yellowgreen;
+    cursor: pointer;
+} 
+
+/*  box disabled hone ke badh ye sbb cheeze add hona hai js me disabled kiye hai jabb box ke andar kuch likha jaye uske badh overwrite na ho isiliye disable krr diye hai */
+.box:disabled{
+    background-color: transparent;
+    color: black;
+    cursor: not-allowed;  /* cursor pointer nhi aayega abb*/
+}
