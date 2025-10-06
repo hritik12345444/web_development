@@ -1,0 +1,67 @@
+*HEADING* Rock paper scissors ka js code hai 
+
+let userScore = 0;
+let compScore = 0;
+let user_Score = document.querySelector(".userScore");
+let comp_Score = document.querySelector("#compuScore");
+
+const choices = document.querySelectorAll(".choice");
+let msgContainer = document.querySelector("#msgContainer");
+let msg = document.querySelector(".msg");
+
+choices.forEach((choice) =>{
+    choice.addEventListener("click", ()=>{
+        let userChoice = choice.getAttribute("id");
+        let compChoice = getCompChoice();
+
+        playGame(userChoice,compChoice);
+
+    })
+})
+
+
+const getCompChoice = () =>{
+    let arr = new Array("rock", "paper", "scissors");
+    let idx = Math.floor(Math.random() * 3);
+    return arr[idx];
+    // console.log(idx);
+}
+
+
+const playGame = (userChoice,compChoice) =>{
+    console.log(userChoice,compChoice);
+
+    if(userChoice === compChoice){
+        msg.innerText = "Game Draw"
+        msg.style.backgroundColor = "blue"
+        msg.style.color = "white";
+
+    }else if(userChoice === "rock"){
+        msg.innerText = compChoice === "paper" ? "You loss" : "Congralutation You Win"
+        
+        colorbackGround();
+
+    }else if(userChoice === "paper"){
+        msg.innerText = compChoice === "rock" ? "Congralutation You Win" : "You loss"
+        colorbackGround();
+    }else{
+        msg.innerText = compChoice === "rock" ? "You loss" : "Congralutation You Win"
+        colorbackGround();
+    }
+}
+
+const colorbackGround = ()=>{
+    if(msg.innerText === "Congralutation You Win"){
+        userScore++;
+        console.log(userScore)
+        user_Score.innerText = userScore;
+        msg.style.backgroundColor = "green";
+        msg.style.color = "white";
+    }else{
+        msg.style.backgroundColor = "red";
+        compScore++;
+        comp_Score.innerText = compScore;
+        msg.style.color = "white";
+    }
+}
+
