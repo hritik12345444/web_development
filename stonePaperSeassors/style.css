@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1d976c, #93f9b9);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.main {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.choice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.choice img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+}
+
+#scoreBoard {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.score h1 {
+    border: 2px solid rgba(255,255,255,0.6);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+}
+
+.msg {
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #imgContainer {
+        gap: 30px;
+    }
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+    .choice img {
+        height: 100px;
+        width: 100px;
+    }
+    #scoreBoard {
+        gap: 40px;
+    }
+    .score {
+        font-size: 1.8rem;
+    }
+    .msg {
+        font-size: 1.3rem;
+    }
+}
